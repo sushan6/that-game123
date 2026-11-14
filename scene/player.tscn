@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://dlwj10io5bxwx"]
+
+[ext_resource type="Script" uid="uid://b8d5qhbadt8qj" path="res://script/player.gd" id="1_hjaqi"]
+[ext_resource type="Texture2D" uid="uid://pxbjqshlau2m" path="res://assets_dino_runner/Spider-Man Character Set 02.png" id="2_fvtld"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6wnmo"]
+size = Vector2(25, 42)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hjaqi"]
+atlas = ExtResource("2_fvtld")
+region = Rect2(192, 96, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s4jxa"]
+atlas = ExtResource("2_fvtld")
+region = Rect2(144, 96, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oh5ij"]
+atlas = ExtResource("2_fvtld")
+region = Rect2(192, 96, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hp4bs"]
+atlas = ExtResource("2_fvtld")
+region = Rect2(240, 96, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_k72ki"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hjaqi")
+}],
+"loop": 1,
+"name": &"jump",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s4jxa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oh5ij")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hp4bs")
+}],
+"loop": 1,
+"name": &"run",
+"speed": 20.0
+}]
+
+[node name="Player" type="CharacterBody2D" unique_id=2120653195]
+script = ExtResource("1_hjaqi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=66672726]
+position = Vector2(-1.5, 3)
+shape = SubResource("RectangleShape2D_6wnmo")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1944111513]
+sprite_frames = SubResource("SpriteFrames_k72ki")
+animation = &"jump"
