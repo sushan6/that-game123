@@ -9,3 +9,5 @@
 
 [node name="Player" parent="." unique_id=2120653195 instance=ExtResource("2_wp4xf")]
 position = Vector2(16, 65)
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1886089364]
