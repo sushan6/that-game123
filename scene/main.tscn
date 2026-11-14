@@ -2,12 +2,15 @@
 
 [ext_resource type="PackedScene" uid="uid://c34b1ocreqxav" path="res://scene/ground.tscn" id="1_v0l8b"]
 [ext_resource type="PackedScene" uid="uid://dlwj10io5bxwx" path="res://scene/player.tscn" id="2_wp4xf"]
+[ext_resource type="PackedScene" uid="uid://d3d38glanuyvl" path="res://scene/Doctor Octopus.tscn" id="3_wp4xf"]
 
 [node name="Main" type="Node2D" unique_id=1202444539]
 
 [node name="ground" parent="." unique_id=1628938920 instance=ExtResource("1_v0l8b")]
 
 [node name="Player" parent="." unique_id=2120653195 instance=ExtResource("2_wp4xf")]
-position = Vector2(16, 65)
+position = Vector2(-160, 584)
 
 [node name="Node2D" type="Node2D" parent="." unique_id=1886089364]
+
+[node name="DoctorOctopus" parent="." unique_id=1880931626 instance=ExtResource("3_wp4xf")]

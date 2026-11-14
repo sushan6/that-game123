@@ -1,21 +1,22 @@
 [gd_scene format=3 uid="uid://c34b1ocreqxav"]
 
-[ext_resource type="Texture2D" uid="uid://drjlwiyu0noma" path="res://assets_dino_runner/ground.png" id="1_vtjbo"]
-[ext_resource type="Script" uid="uid://nckkk8wh4lgj" path="res://scene/sprite_2d.gd" id="2_oqcwv"]
+[ext_resource type="Texture2D" uid="uid://btg7q22r1x71k" path="res://addons/Ruqn1x.png" id="1_oqcwv"]
+[ext_resource type="Script" uid="uid://nckkk8wh4lgj" path="res://script/sprite_2d.gd" id="2_oqcwv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k72ki"]
-size = Vector2(302, 20)
+size = Vector2(1825, 241)
 
 [node name="ground" type="CharacterBody2D" unique_id=1628938920]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1456551941]
 texture_repeat = 2
-position = Vector2(151, 51)
-texture = ExtResource("1_vtjbo")
+position = Vector2(893.21674, 501.54587)
+scale = Vector2(1.0676235, 1.0969061)
+texture = ExtResource("1_oqcwv")
 region_enabled = true
-region_rect = Rect2(0, 0, 300, 100)
+region_rect = Rect2(0, 0, 1707, 940)
 script = ExtResource("2_oqcwv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1124112677]
-position = Vector2(151, 98)
+position = Vector2(905, 1075)
 shape = SubResource("RectangleShape2D_k72ki")

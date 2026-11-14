@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://pxbjqshlau2m" path="res://assets_dino_runner/Spider-Man Character Set 02.png" id="2_fvtld"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6wnmo"]
-size = Vector2(25, 42)
+size = Vector2(100, 175)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hjaqi"]
 atlas = ExtResource("2_fvtld")
@@ -30,7 +30,7 @@ animations = [{
 }],
 "loop": 1,
 "name": &"jump",
-"speed": 20.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -44,18 +44,18 @@ animations = [{
 }],
 "loop": 1,
 "name": &"run",
-"speed": 20.0
+"speed": 10.0
 }]
 
 [node name="Player" type="CharacterBody2D" unique_id=2120653195]
 script = ExtResource("1_hjaqi")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=66672726]
-position = Vector2(-1.5, 3)
+position = Vector2(294, 278.5)
 shape = SubResource("RectangleShape2D_6wnmo")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1944111513]
-position = Vector2(-3, 2.4999988)
-scale = Vector2(0.875, 0.8958333)
+position = Vector2(297.96, 267)
+scale = Vector2(4, 4.094)
 sprite_frames = SubResource("SpriteFrames_k72ki")
 animation = &"jump"

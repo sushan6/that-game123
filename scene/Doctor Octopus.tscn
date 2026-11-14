@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://d3d38glanuyvl"]
+
+[ext_resource type="Texture2D" uid="uid://caau2ggs88j2r" path="res://assets_dino_runner/6206e2f4cf19acb69ba3b444442c8027-Photoroom.png" id="1_hpgv4"]
+
+[node name="DoctorOctopus" type="Node2D" unique_id=1880931626]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=851906888]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1539161748]
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1697300060]
+position = Vector2(555, -83.99997)
+scale = Vector2(0.091, 0.091)
+texture = ExtResource("1_hpgv4")
