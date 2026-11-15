@@ -1,14 +1,21 @@
 [gd_scene format=3 uid="uid://d3d38glanuyvl"]
 
 [ext_resource type="Texture2D" uid="uid://caau2ggs88j2r" path="res://assets_dino_runner/6206e2f4cf19acb69ba3b444442c8027-Photoroom.png" id="1_hpgv4"]
+[ext_resource type="Script" uid="uid://ohiiprdl7k30" path="res://scene/DoctorOctopus.gd" id="1_n8sd6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n8sd6"]
+size = Vector2(177, 149)
 
 [node name="DoctorOctopus" type="Node2D" unique_id=1880931626]
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=851906888]
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=851906888 groups=["enemy"]]
+script = ExtResource("1_n8sd6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1539161748]
+position = Vector2(-18.5, -76.5)
+shape = SubResource("RectangleShape2D_n8sd6")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1697300060]
-position = Vector2(555, -83.99997)
-scale = Vector2(0.091, 0.091)
+position = Vector2(-16, -85)
+scale = Vector2(0.24, 0.24)
 texture = ExtResource("1_hpgv4")

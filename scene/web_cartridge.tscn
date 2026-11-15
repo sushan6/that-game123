@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://3cgsbyu71kv2"]
+
+[ext_resource type="Texture2D" uid="uid://ssf1xusitdo0" path="res://assets_dino_runner/potion_279.png" id="1_igw2h"]
+[ext_resource type="Script" uid="uid://c5hxqql0lyvj5" path="res://script/web_cartridge.gd" id="1_qnxgl"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_k72ki"]
+radius = 80.65358
+
+[node name="WebCartridge" type="Area2D" unique_id=1519870660]
+script = ExtResource("1_qnxgl")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=275465391]
+position = Vector2(833, 1105)
+scale = Vector2(7, 7.4375)
+texture = ExtResource("1_igw2h")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1517290022]
+position = Vector2(842, 1114)
+shape = SubResource("CircleShape2D_k72ki")

@@ -1,12 +1,21 @@
 [gd_scene format=3 uid="uid://dquggcj3y54dq"]
 
 [ext_resource type="Texture2D" uid="uid://bv8erw16dtmg" path="res://assets_dino_runner/Sandman-Photoroom.png" id="1_kilnf"]
+[ext_resource type="Script" uid="uid://dbo5yl1aovupe" path="res://script/Sandman.gd" id="1_wupts"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hpgv4"]
+size = Vector2(144, 160)
 
 [node name="Sandman" type="Node2D" unique_id=710139427]
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1552899447]
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1552899447 groups=["enemy"]]
+script = ExtResource("1_wupts")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=2141008709]
+position = Vector2(2.9999998, -94)
+scale = Vector2(0.359, 0.359)
 texture = ExtResource("1_kilnf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=449471842]
+position = Vector2(6, -83)
+shape = SubResource("RectangleShape2D_hpgv4")
